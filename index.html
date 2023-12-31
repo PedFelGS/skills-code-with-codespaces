@@ -1,1 +1,174 @@
-<h1>Hello from the codespace!</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Summary</title>
+    <link rel="stylesheet" href="isolado+navbar.css" />
+  </head>
+  <body>
+    <header class="application-header">
+      <section class="header-primary">
+        <div class="header-primary__page-name">
+          <div class="breadcrumb">
+            <div class="breadcrumb__item">
+              <div class="breadcrumb-title">Dashboard</div>
+            </div>
+          </div>
+        </div>
+        <div class="header-primary__user">
+          <div class="header-primary__user__item">
+            <div class="header-create-new">
+              <button class="dropdown-toggle app-icon-btn">
+                <img src="https://i.postimg.cc/pLjGwCkL/New.png" alt="" />
+                New
+                <img
+                  src="https://i.postimg.cc/xThKMbMr/Dropdown-PNG.png"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div class="separator vertical-separator"></div>
+            <div class="global-notification">
+              <div class="ember-basic-dropdown">
+                <div class="ember-basic-dropdown-trigger">
+                  <span class="cursor-pointer">
+                    <img
+                      src="https://i.postimg.cc/nznQNGPP/Vector.png"
+                      alt=""
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-primary__user__item">
+            <div class="app-dropdown-group">
+              <a class="app-user-photo profile-photo">
+                <figure class="profilepic">
+                  <span class="avatar-block">
+                    <span class="avatar__initial--icon-wrapper"> P </span>
+                  </span>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="user-menu">
+            <!--<div class="hidden-button">
+      </div> -->
+            <div class="menu-container">
+              <div
+                aria-label="User menu"
+                role="dialog"
+                tabindex="-1"
+                class="user-menu-content"
+              >
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a class="app-user-photo profile-photo">
+                      <figure class="profilepic">
+                        <span class="avatar-block">
+                          <span class="avatar__initial--icon-wrapper"> P </span>
+                        </span>
+                      </figure>
+                    </a>
+                    <a
+                      role="menuitem"
+                      tabindex="0"
+                      href="/@PedFelGS"
+                      class="profile-link"
+                    >
+                      <div class="avatar">
+                        <!--<img
+                    src=""
+                    alt="PedFelGS"
+                    decoding="async"
+                    data-nimg="intrinsic"
+                  />-->
+                      </div>
+                      <div class="username">@PedFelGS</div>
+                    </a>
+                  </li>
+                  <li class="separator"></li>
+
+                  <li class="menu-item">
+                    <a
+                      role="menuitem"
+                      tabindex="0"
+                      data-cy="avatar-dropdown-account-link"
+                      href="/account"
+                      class="menu-link"
+                    >
+                      <span class="wrapper">
+                        <svg
+                          preserveAspectRatio="xMidYMin"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          class="css-492dz9"
+                          style="
+                            --size: 1rem;
+                            --rotate: 0deg;
+                            width: 1rem;
+                            height: 1rem;
+                          "
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M12 1.75A1.25 1.25 0 0 0 10.75 3V3.173a2.4 2.4 0 0 1-1.455 2.196.75.75 0 0 1-.222.057 2.4 2.4 0 0 1-2.497-.54L6.57 4.88l-.06-.06a1.252 1.252 0 1 0-1.77 1.77l.066.066a2.4 2.4 0 0 1 .49 2.625 2.4 2.4 0 0 1-2.188 1.549H3a1.25 1.25 0 0 0 0 2.5h.173a2.4 2.4 0 0 1 2.195 1.45 2.4 2.4 0 0 1-.482 2.644l-.006.006-.06.06a1.253 1.253 0 0 0 .406 2.041 1.25 1.25 0 0 0 1.363-.271l.067-.066a2.4 2.4 0 0 1 2.625-.49 2.4 2.4 0 0 1 1.549 2.188V21a1.25 1.25 0 0 0 2.5 0V20.827a2.4 2.4 0 0 1 1.45-2.195 2.4 2.4 0 0 1 2.644.482l.006.006.06.06a1.253 1.253 0 0 0 1.77 0 1.255 1.255 0 0 0 .271-1.364 1.25 1.25 0 0 0-.271-.405l-.066-.067a2.4 2.4 0 0 1-.482-2.643 2.4 2.4 0 0 1 2.195-1.451H21a1.25 1.25 0 0 0 0-2.5H20.827a2.4 2.4 0 0 1-2.196-1.455.753.753 0 0 1-.058-.222 2.4 2.4 0 0 1 .54-2.497l.007-.006.06-.06a1.252 1.252 0 1 0-1.77-1.77l-.066.066a2.4 2.4 0 0 1-2.643.482 2.4 2.4 0 0 1-1.451-2.195V3A1.25 1.25 0 0 0 12 1.75Zm-1.944-.695A2.75 2.75 0 0 1 14.75 3v.088a.9.9 0 0 0 .545.823l.008.003a.9.9 0 0 0 .99-.178l.056-.056a2.752 2.752 0 1 1 3.891 3.89l-.056.057a.9.9 0 0 0-.178.99c.027.061.046.125.055.19a.9.9 0 0 0 .77.443H21a2.75 2.75 0 1 1 0 5.5h-.088a.9.9 0 0 0-.823.545l-.003.008a.9.9 0 0 0 .178.99l.056.056a2.749 2.749 0 0 1 0 3.891 2.748 2.748 0 0 1-3.89 0l-.057-.056a.9.9 0 0 0-.99-.178l-.007.003a.9.9 0 0 0-.546.823V21a2.75 2.75 0 1 1-5.5 0v-.08a.9.9 0 0 0-.589-.816.767.767 0 0 1-.044-.018.9.9 0 0 0-.99.178l-.056.056a2.748 2.748 0 0 1-3.892 0 2.749 2.749 0 0 1 0-3.89l.057-.057a.9.9 0 0 0 .178-.99l-.003-.007a.9.9 0 0 0-.823-.546H3a2.75 2.75 0 1 1 0-5.5h.08a.9.9 0 0 0 .816-.589.745.745 0 0 1 .018-.044.9.9 0 0 0-.178-.99l-.056-.056A2.752 2.752 0 1 1 7.57 3.76l.057.056a.9.9 0 0 0 .99.178.75.75 0 0 1 .19-.056.9.9 0 0 0 .443-.77V3c0-.73.29-1.429.806-1.945ZM12 9.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM8.25 12a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg> </span
+                      >Account</a
+                    >
+                  </li>
+                  <li class="separator"></li>
+                  <li class="menu-item">
+                    <a
+                      role="menuitem"
+                      tabindex="0"
+                      href="/logout"
+                      class="menu-link"
+                    >
+                      <span class="wrapper">
+                        <svg
+                          preserveAspectRatio="xMidYMin"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          class="css-492dz9"
+                          style="
+                            --size: 1rem;
+                            --rotate: 0deg;
+                            width: 1rem;
+                            height: 1rem;
+                          "
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M2.25 6A3.75 3.75 0 0 1 6 2.25h10.5A3.75 3.75 0 0 1 20.25 6v3a.75.75 0 0 1-1.5 0V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25h10.5A2.25 2.25 0 0 0 18.75 18v-1.979a.75.75 0 0 1 1.5 0V18a3.75 3.75 0 0 1-3.75 3.75H6A3.75 3.75 0 0 1 2.25 18V6Zm12.124 1.677a.75.75 0 0 1 0 1.06L11.41 11.7h9.59a.75.75 0 0 1 0 1.5h-9.59l2.963 2.962a.75.75 0 1 1-1.061 1.06L9.07 12.98a.75.75 0 0 1 0-1.06l4.243-4.243a.75.75 0 0 1 1.06 0Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </span>
+                      Log out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--<div class="hidden-button">
+        <button aria-label="Descartar" tabindex="-1"></button>
+      </div> -->
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <script type="text/javascript" src="isolado+navbar.js"></script>
+  </body>
+</html>

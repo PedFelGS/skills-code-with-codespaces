@@ -10,7 +10,8 @@
   "customizations": {
       "vscode": {
           "extensions": [
-              "GitHub.copilot"
+              "GitHub.copilot",
+              "manigandancodes.repl-it-theme"
           ]
       },
       "codespaces": {
