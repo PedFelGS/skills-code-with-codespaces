@@ -20,5 +20,13 @@
           ]
       }
   },
-  "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md"
+  "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md",
+  "settings": {
+    "workbench.startupEditor": "newUntitledFile",
+    "extensions.autoUpdate": true,
+    "extensions.autoCheckUpdates": true,
+    "extensions.ignoreRecommendations": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "extensions.autoInstallExtensions": true,
+  }
 }
